@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Services from "@/components/Services";
+import ScrollGallery from "@/components/ScrollGallery";
 
 export default function Home() {
   return (
@@ -9,7 +10,9 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
+        <ScrollGallery />
         <Features />
+     
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
   
