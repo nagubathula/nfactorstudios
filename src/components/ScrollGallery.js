@@ -19,7 +19,7 @@ const ScrollGallery = () => {
     { id: 5, src: "/videos/5.gif", alt: "AI product website" },
     { id: 6, src: "/videos/6.gif", alt: "Banking app" },
     { id: 7, src: "/videos/7.gif", alt: "Creative agency website" },
-    { id: 8, src: "/videos/1.gif", alt: "Mobile wallet app" },
+    { id: 8, src: "/videos/8.gif", alt: "Mobile wallet app" },
   ];
 
 
