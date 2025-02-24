@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Services from "@/components/Services";
 import ScrollGallery from "@/components/ScrollGallery";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,10 +13,9 @@ export default function Home() {
         <Services />
         <ScrollGallery />
         <Features />
-     
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-  
+        <Footer />
       </footer>
     </div>
   );
