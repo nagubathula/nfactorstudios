@@ -2,15 +2,13 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <div className="min-h-screen bg-blue-900 text-white">
-    <div className="container mx-auto relative rounded-xl bg-gradient-to-b from-[#004080] to-[#001F3F]">
-      <div className="absolute opacity-10">
-        <Image src="/images/hypercheckout-img1.svg" alt="" width={700} height={700} />
-      </div>
+    <div className="min-h-screen p-8 text-white">
+    <div className="container  mx-auto relative rounded-xl bg-[url(/images/tortoise-shell.svg)] bg-cover ">
+    
 
       <div className="h-auto overflow-hidden px-10 md:rounded-[24px] bg-gradient-to-b from-[#004080] to-[#001F3F]">
-        <div className="mx-auto flex w-[90%] max-w-[1000px] flex-col items-center rounded-[16px] rounded-t-none border-2 border-[#003366] pt-10 pb-[48px] bg-gradient-to-b from-[#004080] to-[#001F3F]">
-          <div className="px-2 py-2 bg-contain bg-no-repeat" style={{ backgroundImage: "url('/assets/tag-gradiant-bg.svg')" }}>
+        <div className="mx-auto flex w-[90%] max-w-[1000px] flex-col items-center rounded-[16px] rounded-t-none  pt-10 pb-[48px] ">
+          <div className="px-2 py-2 bg-contain bg-no-repeat" >
             <div className="p-4 pt-[10px] text-center text-[14px] font-semibold tracking-[2.94px] uppercase text-[#E0F7FF]">
               Why we are different ?
             </div>
@@ -29,11 +27,7 @@ export default function Features() {
             </p>
           </div>
 
-          <a href="/hypercheckout">
-            <button className="bg-[#0080FF] rounded-xl border border-[#0080FF] px-[26px] py-3 text-[18px] font-semibold text-white shadow-md focus:translate-y-1 focus:shadow-none">
-              Learn More
-            </button>
-          </a>
+          
         </div>
 
         <div className="relative mt-10 flex justify-center gap-1 md:mt-[100px] lg:h-[400px]">
@@ -41,7 +35,7 @@ export default function Features() {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className={`bg-blue-800 flex w-auto flex-col gap-2 rounded-[12px] border border-[#66A3FF] p-6 md:gap-6 lg:h-[600px] lg:w-1/4 ${card.rotation}`}
+                className={`bg-blue-500 flex w-auto flex-col gap-2 rounded-[12px] border border-[#66A3FF] p-6 md:gap-6 lg:h-[600px] lg:w-1/4 ${card.rotation}`}
               >
                 <div className="flex flex-row items-start gap-2 md:flex-col">
                   <img alt="" src={card.icon} className="h-7 md:h-[60px]" />
