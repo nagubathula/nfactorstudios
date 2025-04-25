@@ -28,13 +28,13 @@ const ScrollGallery = () => {
   const duplicatedBottomGifs = [...bottomGifs, ...bottomGifs, ...bottomGifs];
 
   return (
-    <div className="w-full bg-gray-100 py-16">
-      <div className="px-4 mb-16 text-center">
+    <div className="w-full py-16">
+      {/* <div className="px-4 mb-16 text-center">
         <h2 className="text-4xl font-bold mb-4">Our Portfolio</h2>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
           Explore our digital creations
         </p>
-      </div>
+      </div> */}
 
       {/* Top row - infinite scroll to left */}
       <div className="overflow-hidden relative mb-12">
@@ -53,7 +53,7 @@ const ScrollGallery = () => {
           {duplicatedTopGifs.map((gif, index) => (
             <div 
               key={`${gif.id}-${index}`} 
-              className="relative w-96 h-64 rounded-lg overflow-hidden shadow-lg flex-shrink-0"
+              className="relative w-64 h-48 rounded-lg overflow-hidden shadow-lg flex-shrink-0"
             >
               <img 
                 src={gif.src} 
@@ -66,7 +66,7 @@ const ScrollGallery = () => {
       </div>
 
       {/* Bottom row - infinite scroll to right */}
-      <div className="overflow-hidden relative">
+      {/* <div className="overflow-hidden relative">
         <motion.div 
           className="flex gap-6 w-max"
           animate={{ 
@@ -92,7 +92,7 @@ const ScrollGallery = () => {
             </div>
           ))}
         </motion.div>
-      </div>
+      </div> */}
     </div>
   );
 };
