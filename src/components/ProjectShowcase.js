@@ -22,7 +22,8 @@ const projects = [
     description: "Open-source design system and React library.",
     image: "/chaya.avif",
     category: "Design System",
-    link: "/case-study/sorae",
+    link: "https://chaya.traboda.com",
+    text: "Visit Site",
   },
   {
     id: 3,
@@ -30,7 +31,7 @@ const projects = [
     description: "Public Address System for K. L. University",
     image: "/customamplifierbox.webp",
     category: "Product Design",
-    link: "/case-study/bodo-ai",
+    link: "https://hippogriff.medium.com/ux-case-study-of-public-adressing-system-for-hoste-a84ce1583288",
     text: "Case Study",
   },
   {
@@ -39,9 +40,29 @@ const projects = [
     description: "New Age Customizable Billing System",
     image: "/videos/8.gif",
     category: "Product Design",
-    link: "/case-study/bodo-ai",
+    link: "https://www.figma.com/board/iZoO9T4W3C4RwIUWZRbZsV/Case-Study?node-id=0-1&t=OAdZQYVAwiFOnSA7-1",
     text: "Case Study",
   },
+  {
+    id: 5,
+    title: "Tailus",
+    description: "Tailwind CSS UI Kit",
+    image: "/tailus.png",
+    category: "Product Design",
+    link: "https://www.behance.net/gallery/210333091/Tailus-Ui-Case-Study",
+    text: "Case Study",
+  },
+  {
+    id: 6,
+    title: "Tailus",
+    description: "Tailwind CSS UI Kit",
+    image: "/videos/2.gif",
+    category: "Web Design",
+    link: "https://apspcl.ap.gov.in",
+    text: "Visit Site",
+    
+  },
+  
   
 ];
 
