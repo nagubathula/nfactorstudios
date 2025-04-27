@@ -82,7 +82,7 @@ const Hours = () => {
           5k+ Hours Invested
         </div>
       </div>
-      <div className="flex  w-[90%] mx-auto items-left justify-end min-h-screen  pb-16">
+      <div className="flex  w-[90%] mx-auto items-left justify-end   pb-16">
         <div className="w-full md:w-4/5 ">
           <div className="grid grid-cols-2 md:grid-cols-3 py-6">
             {careerData.map((item, index) => (
