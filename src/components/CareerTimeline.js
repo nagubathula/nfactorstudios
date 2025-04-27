@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const CareerTimeline = () => {
    
@@ -9,6 +10,7 @@ const CareerTimeline = () => {
       
         {
           role: 'Product Engineer (Contract)',
+          link: 'https://www.apspcl.ap.gov.in/',
           company: 'APSPCL',
           type: 'Full-time',
           period: 'Jun 2024 - Feb 2024',
@@ -17,15 +19,8 @@ const CareerTimeline = () => {
           logo: '⬛',
           skills: ['User Experience Testing', 'Usability Engineering', 'Web Applications', 'UI/UX', 'Electronics']
         },
-        {
-          role: 'Project Consultant (Contract)',
-          company: 'APSPCL',
-          type: 'Part-time',
-          period: 'Jan 2022 - Jan 2024',
-          duration: '2 yrs',
-          location: 'India · On-site',
-          logo: '⬜'
-        },
+    
+    
    
         {
           role: 'Product Engineer (Intern)',
@@ -33,37 +28,40 @@ const CareerTimeline = () => {
           type: 'Freelance',
           period: 'Feb 2024 - Oct 2024',
           duration: '9 mos',
-          logo: '🟪'
+          logo: '🟪',
+          link: 'https://www.traboda.com/',
         },
-        {
-          role: 'Full Stack Engineer (Intern)',
-          company: 'Friday AI',
-          type: 'Internship',
-          period: 'Jul 2023 - Aug 2023',
-          duration: '2 mos',
-          logo: '🔵'
-        },
-        {
-          role: 'Researcher (Student)',
-          company: 'Team bi0s',
-          type: 'Part-time',
-          period: 'Feb 2022 - Mar 2024',
-          duration: '2 yrs 2 mos',
-          location: 'Kochi, India · Hybrid',
-          logo: '⬜',
-          skills: ['E-Commerce', 'UI/UX', 'User Research', 'Prototyping', 'HTML', 'JavaScript', 'User-centered Design', 'Web Development', 'Wireframing', 'Graphic Design', 'Python (Programming Language)', 'NodeJs', 'Front End Development', 'Hardware Security', 'Agile Environment']
-        },
+        // {
+        //   role: 'Full Stack Engineer (Intern)',
+        //   company: 'Friday AI',
+        //   type: 'Internship',
+        //   period: 'Jul 2023 - Aug 2023',
+        //   duration: '2 mos',
+        //   logo: '🔵'
+        // },
+        // {
+        //   role: 'Researcher (Student)',
+        //   company: 'Team bi0s',
+        //   type: 'Part-time',
+        //   period: 'Feb 2022 - Mar 2024',
+        //   duration: '2 yrs 2 mos',
+        //   location: 'Kochi, India · Hybrid',
+        //   logo: '⬜',
+        //   skills: ['E-Commerce', 'UI/UX', 'User Research', 'Prototyping', 'HTML', 'JavaScript', 'User-centered Design', 'Web Development', 'Wireframing', 'Graphic Design', 'Python (Programming Language)', 'NodeJs', 'Front End Development', 'Hardware Security', 'Agile Environment']
+        // },
         {
           role: 'Design And Development Engineer',
-          company: 'Redantio',
+          company: 'Redantio Solutions PVT Ltd',
           type: 'Full-time',
           period: 'Feb 2023 - Aug 2023',
           duration: '7 mos',
           location: 'Kollam, Kerala, India',
-          logo: '📈'
+          logo: '📈',
+          link: 'https://www.redantio.com/',
         },
         {
           role: 'Research Intern',
+          link: 'https://www.redantio.com/',
           company: 'Redantio Solutions  PVT Ltd',
           type: 'Full-time',
           period: 'Jan 2022 - Feb 2023',
@@ -74,6 +72,7 @@ const CareerTimeline = () => {
         },
         {
           role: 'Design Specialist',
+          link: 'https://aseam.acm.org/join/',
           company: 'ACM Amritapuri Chapter',
           type: 'Freelance',
           period: 'Oct 2021 - Feb 2022',
@@ -98,9 +97,9 @@ const CareerTimeline = () => {
                   <div className="">{item.period}</div>
                 </div>
                 <div className="md:col-span-1  md:text-left mt-2 md:mt-0">
-                  <div className="md:text-2xl font-medium text-gray-800">
+                  <Link href={item.link} className="md:text-2xl font-medium text-gray-800">
                     {item.company}
-                  </div>
+                  </Link>
                 </div>
                 <div className="md:col-span-1">
                   <div className="text-xl md:text-2xl font-medium text-gray-800">
