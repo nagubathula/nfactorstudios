@@ -10,7 +10,7 @@ export default function StickyFooter() {
 
         <div className="flex flex-col space-y-4 mb-32">
           <Link
-            href="mailto:example@email.com"
+            href="mailto:nagubathula.satyasai@gmail.com"
             className="inline-flex items-center bg-violet-400 text-black text-xl md:text-2xl rounded-full py-3 px-6 w-fit hover:bg-violet-300 transition-colors"
           >
             <span className="mr-2">You can Email me</span>
