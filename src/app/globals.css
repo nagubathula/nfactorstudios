@@ -5,5 +5,22 @@
 
 body {
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+footer {
+  height: 100vh;
+  background-color: rgba(29, 29, 29, 0.993);
+  color: white;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  
+}
+
+.content {
+  min-height: 100vh;
+  background-color: #fcfcf1; /* Needed to obscure the footer behind it */
+  position: relative; /* Needed to make z-index work */
+  z-index: 1; /* Make sure the content is on top of the footer */
 }

@@ -4,19 +4,32 @@ import Features from "@/components/Features";
 import Services from "@/components/Services";
 import ScrollGallery from "@/components/ScrollGallery";
 import Footer from "@/components/Footer";
+import ProjectShowcase from "@/components/ProjectShowcase";
+import ExperienceTable from "@/components/ExperienceTable";
+import CareerTimeline from "@/components/CareerTimeline";
+import Hours from "@/components/Hours";
+import DesignPrinciples from "@/components/DesignPrinciples";
+import StickyFooter from "@/components/StickyFooter";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
-      <main>
+    <div className="">
+    
+      <main className="content bg-white flex flex-col justify-between rounded-3xl">
         <Hero />
-        <Services />
-        <ScrollGallery />
-        <Features />
+
+        <ProjectShowcase />
+     
+        <CareerTimeline />
+        <Hours />
+        <DesignPrinciples />
+       
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <Footer />
-      </footer>
+      <StickyFooter />
+     
+        
+    
+
     </div>
   );
 }

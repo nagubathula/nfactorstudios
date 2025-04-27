@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -10,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="pt-12 sm:pt-16 text-white">
+      <header className="my-2 fixed sticky inset-x-0 top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-black/5">
         <div className="container mx-auto">
           <div className="flex sm:px-8 md:px-12 justify-between group/row relative isolate">
             <div
@@ -61,7 +62,7 @@ const Navbar = () => {
               {/* CTA Button (hidden on mobile) */}
               <div className="relative hidden items-center py-3 lg:flex">
                 <a
-                  className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white hover:bg-fuchsia-950/30"
+                  className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium  hover:bg-fuchsia-950/30"
                   href="/blog/radiant-raises-100m-series-a-from-tailwind-ventures"
                 >
                   Create your first website with us
@@ -115,7 +116,7 @@ const Navbar = () => {
                   <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z" />
                 </svg>
                 <a
-                  className="flex items-center px-4 py-3 text-base font-medium text-white hover:bg-black/5"
+                  className="flex items-center px-4 py-3 text-base font-medium  hover:bg-black/5"
                   href="/pricing"
                 >
                   Pricing
@@ -153,7 +154,7 @@ const Navbar = () => {
                   <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z" />
                 </svg>
                 <a
-                  className="flex items-center px-4 py-3 text-base font-medium text-white hover:bg-black/5"
+                  className="flex items-center px-4 py-3 text-base font-medium  hover:bg-black/5"
                   href="/company"
                 >
                   Company
@@ -191,7 +192,7 @@ const Navbar = () => {
                   <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z" />
                 </svg>
                 <a
-                  className="flex items-center px-4 py-3 text-base font-medium text-white hover:bg-black/5"
+                  className="flex items-center px-4 py-3 text-base font-medium  hover:bg-black/5"
                   href="/blog"
                 >
                   Blog
@@ -229,7 +230,7 @@ const Navbar = () => {
                   <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z" />
                 </svg>
                 <a
-                  className="flex items-center px-4 py-3 text-base font-medium text-white hover:bg-black/5"
+                  className="flex items-center px-4 py-3 text-base font-medium  hover:bg-black/5"
                   href="/login"
                 >
                   Login
@@ -283,31 +284,31 @@ const Navbar = () => {
               <div className="px-6 py-6 space-y-1 bg-black/5 rounded-lg mt-2">
                 <a
                   href="/pricing"
-                  className="block px-3 py-2 text-base font-medium text-white hover:bg-black/10 rounded"
+                  className="block px-3 py-2 text-base font-medium  hover:bg-black/10 rounded"
                 >
                   Pricing
                 </a>
                 <a
                   href="/company"
-                  className="block px-3 py-2 text-base font-medium text-white hover:bg-black/10 rounded"
+                  className="block px-3 py-2 text-base font-medium  hover:bg-black/10 rounded"
                 >
                   Company
                 </a>
                 <a
                   href="/blog"
-                  className="block px-3 py-2 text-base font-medium text-white hover:bg-black/10 rounded"
+                  className="block px-3 py-2 text-base font-medium  hover:bg-black/10 rounded"
                 >
                   Blog
                 </a>
                 <a
                   href="/login"
-                  className="block px-3 py-2 text-base font-medium text-white hover:bg-black/10 rounded"
+                  className="block px-3 py-2 text-base font-medium  hover:bg-black/10 rounded"
                 >
                   Login
                 </a>
                 <div className="pt-2 mt-2 border-t border-white/10">
                   <a
-                    className="flex items-center gap-1 px-3 py-3 text-sm font-medium text-white rounded bg-fuchsia-950/35 hover:bg-fuchsia-950/40"
+                    className="flex items-center gap-1 px-3 py-3 text-sm font-medium  rounded bg-fuchsia-950/35 hover:bg-fuchsia-950/40"
                     href="/blog/radiant-raises-100m-series-a-from-tailwind-ventures"
                   >
                     Create your first website with us
