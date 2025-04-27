@@ -5,6 +5,9 @@ import Services from "@/components/Services";
 import ScrollGallery from "@/components/ScrollGallery";
 import Footer from "@/components/Footer";
 import ProjectShowcase from "@/components/ProjectShowcase";
+import ExperienceTable from "@/components/ExperienceTable";
+import CareerTimeline from "@/components/CareerTimeline";
+import Hours from "@/components/Hours";
 
 export default function Home() {
   return (
@@ -15,6 +18,9 @@ export default function Home() {
         <ScrollGallery /> */}
         {/* <Features /> */}
         <ProjectShowcase />
+        {/* <ExperienceTable /> */}
+<CareerTimeline />
+<Hours />
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <Footer />

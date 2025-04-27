@@ -48,17 +48,57 @@ const projects = [
     title: "Tailus",
     description: "Tailwind CSS UI Kit",
     image: "/tailus.png",
-    category: "Product Design",
+    category: "Design System",
     link: "https://www.behance.net/gallery/210333091/Tailus-Ui-Case-Study",
     text: "Case Study",
   },
   {
     id: 6,
-    title: "Tailus",
-    description: "Tailwind CSS UI Kit",
+    title: "APSPCl",
+    description: "Website for APSPCL (Andhra Pradesh Solar Power Corporation Private Limited)",
     image: "/videos/2.gif",
-    category: "Web Design",
+    category: "Website",
     link: "https://apspcl.ap.gov.in",
+    text: "Visit Site",
+    
+  },
+  {
+    id: 7,
+    title: "RWDY Store Revamp",
+    description: "Revamping the RWDY Store (E commerce Fashion Store)",
+    image: "/videos/1.gif",
+    category: "Website",
+    link: "https://www.behance.net/gallery/195847337/RWDY-Store-Revamping",
+    text: "Visit Site",
+    
+  },
+  {
+    id: 8,
+    title: "B Sides Kochi",
+    description: "Website for B Sides Kochi A Cyber Security Conference",
+    image: "/videos/9.gif",
+    category: "Website",
+    link: "https://bsideskochi.in/",
+    text: "Visit Site",
+    
+  },
+  {
+    id: 9,
+    title: "Bi0s Hardware",
+    description: "Website for bi0s hardware (A Cyber Security Organization)",
+    image: "/bi0shardware.png",
+    category: "Website",
+    link: "https://bi0shardware.com/",
+    text: "Visit Site",
+    
+  },
+  {
+    id: 10,
+    title: "Graphic Design",
+    description: "Graphics Designs for various events and organizations",
+    image: "/wiredctf.png",
+    category: "Graphic Design",
+    link: "https://bi0shardware.com/",
     text: "Visit Site",
     
   },
@@ -149,7 +189,7 @@ const ProjectCard = ({ project }) => {
                 duration: 0.3
               }}
             >
-              <h3 className="text-white text-xl font-semibold mb-2">{project.title}</h3>
+              <h3 className="text-white text-xl  mb-2">{project.title}</h3>
               <p className="text-gray-200 text-sm">{project.description}</p>
               <div className="mt-4">
                 <span className="inline-block bg-white bg-opacity-20 text-white text-xs px-3 py-1 rounded-full">
@@ -166,19 +206,19 @@ const ProjectCard = ({ project }) => {
   
   const ProjectShowcase = () => {
     const [filter, setFilter] = useState('All');
-    const categories = ['All', 'Design System','Brand Design', 'Website', 'Marketing Experience'];
+    const categories = ['All', 'Product Design' , 'Design System','Brand Design', 'Website', 'Graphic Design', ];
     
     const filteredProjects = filter === 'All' 
       ? projects 
       : projects.filter(project => project.category === filter);
     
     return (
-      <div className="container mx-auto px-4 py-16">
+      <div className="w-[90%] mx-auto px-4 py-16">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Left sidebar - sticky */}
-          <div className="lg:w-1/4 lg:sticky lg:top-16 lg:self-start">
+          <div className="lg:w-1/5 lg:sticky lg:top-16 lg:self-start">
             <div className="mb-16">
-              <h1 className="text-6xl  mb-8">I did</h1>
+              <h1 className="text-4xl  mb-8">I did</h1>
               <div className="flex flex-col gap-3 mb-6">
                 {categories.map((category) => (
                   <button
@@ -194,16 +234,16 @@ const ProjectCard = ({ project }) => {
                   </button>
                 ))}
               </div>
-              <h1 className="text-6xl ">
+              <h1 className="text-4xl ">
                 and<br />everything<br />in between in my past.
               </h1>
             </div>
           </div>
           
           {/* Projects grid - main content */}
-          <div className="lg:w-3/4">
+          <div className="lg:w-4/5">
             <motion.div 
-              className="grid grid-cols-1 md:grid-cols-2 gap-6"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
               layout
             >
               {filteredProjects.map((project) => (
